@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+
+html {
+    border-style: solid;
+    border-width: 5px 0 1px 0;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    max-width: 800px;
+    padding: 0 20px 20px 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+/* Desktop sizes */
+@media only screen and (min-width: 600px) {
+    ol {
+        column-count: 2;
+    }
+    body {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
