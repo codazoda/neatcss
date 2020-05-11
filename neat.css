@@ -23,6 +23,10 @@ img {
     width: 100%;
 }
 
+.logo {
+    width: none;
+}
+
 /* Desktop sizes */
 @media only screen and (min-width: 600px) {
     ol {
