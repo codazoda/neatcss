@@ -6,7 +6,7 @@ A minimalist, long lasting, HTML template. See [neat.joeldare.com](https://neat.
 
 Neat is distributed as open source under the MIT license. 
 
-There are lots of ways you could contibute to Neat. First, please help spread the word about this project and get others using it. Something as simple as sharing it on social media goes a long way. If you find an problem, please create an issue on Github. I'm also happy to review code change requests. Feel free to fork this project and create a pull request. Here's a high level overview of how you do that.
+There are lots of ways you could contribute to Neat. First, please help spread the word about this project. Something as simple as sharing it on social media goes a long way. If you find a problem, please create an issue on Github. I'm happy to review code change requests. To do that, fork the project and create a pull request. Here's a high level overview of how you do that.
 
 * Fork the project on Github
 * Clone your fork to your local machine
