@@ -24,7 +24,8 @@ img {
 }
 
 .logo {
-    width: none;
+    width: 100px;
+    margin-top: 20px;
 }
 
 /* Desktop sizes */
