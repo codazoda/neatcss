@@ -25,6 +25,7 @@ img {
     width: 100%;
 }
 
+<<<<<<< HEAD
 .button {
     background-color: #404040;
     color: white;
@@ -40,6 +41,10 @@ a.button {
 .center {
     margin-left: auto;
     margin-right: auto;
+
+.logo {
+    width: 100px;
+    margin-top: 20px;
 }
 
 /* Desktop sizes */
