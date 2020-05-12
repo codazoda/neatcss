@@ -13,6 +13,9 @@
 
 <body>
 
+    <a class="home" href="neat.html">↖</a>
+
+
     <h1>neat.html</h1>
 
     <ol>
@@ -21,23 +24,28 @@
         <li><a href="#philosophy">Philosophy</a></li>
         <li><a href="#start">Getting Started</a></li>
         <li><a href="#decisions">Design Decisions</a></li>
+        <li><a href="#contributing">Contributing</a></li>
         <li><a href="#github">Github</a></li>
     </ol>
 
     <h2 id="download">Download</h2>
 
-    <p><a href="neat.zip">Neat.html 1.0.0</a> (2.36kb) &mdash; 10 May 2020</p>
+    <p><a href="https://github.com/codazoda/neat.html/archive/master.zip">Neat.html 0.0.0</a> (7k) &mdash; 10 May 2020</p>
  
+    <a href="#about" class="button center">Download</a>
 
     <h2 id="about">About</h2>
 
     <img src="https://i0.wp.com/www.trailandhitch.com/wp-content/uploads/2015/11/The-Yamoto-small.jpg?resize=1100%2C694">
 
+
     <p>A minimalist, long lasting, HTML template.<p>
     
-    <p>Neat.html is a minimalist HTML template for writing.</p>
+    <p>Neat.html is an oppinionated HTML template for writing. It's designed to last as well as to be small.</p>
 
     <p>I like my web pages neat. Neat is a minimalist, long lasting, HTML and CSS template. Inspired by other minimalist sites like <a href="100r.co">Hundred Rabits</a>.</p>
+
+    <p>Neat is currently 7k (yes kilobytes) including this documentation. It adds only about 1k of overhead to whatever you write with it.</p>
  
     <h2 id="philosophy">Philosophy</h2>
 
@@ -119,7 +127,28 @@
 
     <p>One of the goals is to use symantic web tags. Buttons are a unique case because most people want a button to link somewhere, but the button tag doesn't currently support the href attribute. Buttons, in Neat are <em>anchor</em> tags with a <em>class</em> of <em>button</em>.</p>
 
-    <code><a class="button" href="#">Button</a></code>
+    <pre>&lt;a class="button" href="#"&gt;Button&lt;/a&gt;</pre>
+
+    <h3>No Header</h3>
+
+    <p>Originally, I started to build a header with navigation links in it, but the css code piled up and it didn't feel minimalist to me. Those links are also a distraction on whatever message your page is trying to tell. In my research I found lots of examples of minimalist sites without top navigation and only a link back to the home page. As a result, there is no header and no navigation.</p>
+
+
+    <h2 id="contributing">Contributing</h2>
+    
+    <p>Neat is distributed as open source under the MIT license.</p>
+
+    <p>There are lots of ways you could contribute to Neat. First, please help spread the word about this project. Something as simple as sharing it on social media goes a long way. If you find a problem, please create an issue on Github. I'm happy to review code change requests. To do that, fork the project and create a pull request. Here's a high level overview of how you do that.</p>
+
+    <ul>
+        <li>Fork the project on Github</li>
+        <li>Clone your fork to your local machine</li>
+        <li>Create a new branch</li>
+        <li>Make and test your changes</li>
+        <li>Add and commit those changes</li>
+        <li>Push your new branch up to Github</li>
+        <li>Use the <em>Compare & pull request</em> button on Github to send a PR</li>
+    </ul>
 
 
     <h2 id="github">Github</h2>
@@ -132,6 +161,11 @@
     <ul>
         <li>Make indexes have a special class</li>
         <li>Add buttons, kinda like skeleton</li>
+        <li>Make an image slider?</li>
+        <li>Make a product grid</li>
+        <li>Think about the logo and home links<li>
+        <li>Create navigation links; home | about | whatever</li>
+        <li>Add footer links</li>
     </ul>
 
 </body>
