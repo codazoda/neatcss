@@ -13,7 +13,8 @@
 
 <body>
 
-    <a href="neat.html"><img class="logo" src="logo.png"></a>
+    <a class="home" href="neat.html">↖</a>
+
 
     <h1>neat.html</h1>
 
@@ -39,7 +40,7 @@
 
     <p>A minimalist, long lasting, HTML template.<p>
     
-    <p>Neat.html is a minimalist HTML template for writing.</p>
+    <p>Neat.html is an oppinionated HTML template for writing. It's designed to last as well as to be small.</p>
 
     <p>I like my web pages neat. Neat is a minimalist, long lasting, HTML and CSS template. Inspired by other minimalist sites like <a href="100r.co">Hundred Rabits</a>.</p>
  
@@ -123,7 +124,11 @@
 
     <p>One of the goals is to use symantic web tags. Buttons are a unique case because most people want a button to link somewhere, but the button tag doesn't currently support the href attribute. Buttons, in Neat are <em>anchor</em> tags with a <em>class</em> of <em>button</em>.</p>
 
-    <code><a class="button" href="#">Button</a></code>
+    <pre>&lt;a class="button" href="#"&gt;Button&lt;/a&gt;</pre>
+
+    <h3>No Header</h3>
+
+    <p>Originally, I started to build a header with navigation links in it, but the css code piled up and it didn't feel minimalist to me. Those links are also a distraction on whatever message your page is trying to tell. In my research I found lots of examples of minimalist sites without top navigation and only a link back to the home page. As a result, there is no header and no navigation.</p>
 
 
     <h2 id="github">Github</h2>
@@ -140,6 +145,7 @@
         <li>Make a product grid</li>
         <li>Think about the logo and home links<li>
         <li>Create navigation links; home | about | whatever</li>
+        <li>Add footer links</li>
     </ul>
 
 </body>
