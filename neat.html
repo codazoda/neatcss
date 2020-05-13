@@ -4,7 +4,6 @@
 
     <title>neat.html</title>
 
-    <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="neat.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +17,14 @@
 
     <h1>neat.html</h1>
 
+    <p>Create a tiny website in seconds, host it anywhere, and watch it last.</p>
+
     <ol>
         <li><a href="#download">Download</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#philosophy">Philosophy</a></li>
         <li><a href="#start">Getting Started</a></li>
+        <li><a href="#uses">Uses</a></li>
+        <li><a href="#customizing">Customizing</a></li>
         <li><a href="#decisions">Design Decisions</a></li>
         <li><a href="#contributing">Contributing</a></li>
         <li><a href="#github">Github</a></li>
@@ -30,65 +32,25 @@
 
     <h2 id="download">Download</h2>
 
-    <p><a href="https://github.com/codazoda/neat.html/archive/master.zip">Neat.html 0.0.0</a> (7k) &mdash; 10 May 2020</p>
- 
-    <a href="#about" class="button center">Download</a>
+    <p><a href="https://github.com/codazoda/neat.html/archive/master.zip">Neat.html 0.0.1</a> (4k) &mdash; 10 May 2020</p>
+
 
     <h2 id="about">About</h2>
 
-    <img src="https://i0.wp.com/www.trailandhitch.com/wp-content/uploads/2015/11/The-Yamoto-small.jpg?resize=1100%2C694">
-
-
-    <p>A minimalist, long lasting, HTML template.<p>
+    <!-- <img src=""> -->
     
-    <p>Neat.html is an oppinionated HTML template for writing. It's designed to last as well as to be small.</p>
+    <p>Neat is a simple HTML template. It's tiny, opinionated, and made to last. It's created by Joel Dare and heavily inspired by other minimalist sites like <a href="100r.co">Hundred Rabits</a> and dozens of similar blogs.</p>
 
-    <p>I like my web pages neat. Neat is a minimalist, long lasting, HTML and CSS template. Inspired by other minimalist sites like <a href="100r.co">Hundred Rabits</a>.</p>
+    <p>Neat is currently 7k (yes kilobytes) including this documentation. It adds only about 1k of overhead to whatever you create with it. And that's when it's not minified or compressed.</p>
 
-    <p>Neat is currently 7k (yes kilobytes) including this documentation. It adds only about 1k of overhead to whatever you write with it.</p>
- 
-    <h2 id="philosophy">Philosophy</h2>
-
-    <p>Neat.html follows these rules.</p>
-
-    <p>Small</p>
-
-    <p>Neat was designed to be very small.</p>
-
-    <ul>
-        <li>Simple HTML and CSS only</li>
-        <li>Symantec</li>
-        <li>Small</li>
-        <li>Accessable</li>
-        <li>Long lasting</li>
-        <li>Free</li>
-        <li>Responsive</li>
-        <li>Low Energy and Fast</li>
-        <li>Todo</li>
-    </ul>
-
-
-    <h3>Small</h3>
-
-    <p>Neat was designed to be small.</p>
-
-    <h3>Low Energy and Fast</h3>
-
-    <p>Designed to be fast, even on the slowest connections. Consuming very little memory, bandwidth, and energy on both the server and the client.</p>
-
-    <h3>Long Lasting</h3>
-
-    <p>Technology changes fast. The technology that's stuck around the longest is html.</p>
+    <p>"That's pretty neat!"</p>
 
 
     <h2 id="start">Getting Started</h2>
 
     <p>Copy neat.html to index.html and edit it in your favorite text editor.</p>
 
-    <p>Make your own changes to the <em>custom.css</em> file. That way you can update <em>neat.css</em> and keep all your modifications intact.</p>
-
-
-    <h2 id="usage">Usage</h2>
+    <h2 id="uses">Uses</h2>
 
     <p>Neat.html was designed for.</p>
 
@@ -98,18 +60,42 @@
         <li>Technical sites</li>
         <li>Documentation</li>
         <li>Books</li>
+        <li>Simple shops</li>
     </ul>
 
-    <p>Neat.html was designed for.</p>
+
+    <h2 id="customizing">Customizing</h2>
+
+    <p>It's easy to customize Neat. The best way is to create a new <em>custom.css</em> file and then add the following line to the head of your page.</p>
+
+    <pre>&lt;link rel="stylesheet" type="text/css" href="custom.css"&gt;</pre>
+        
+    <p>That will give you the option of updating <em>neat.css</em> without losing any of your personalizations.</p>
 
 
     <h2 id="decisions">Design Decisions</h2>
 
-    <p>As with anything, you've got to make decisions on the design of Neat.html. Here are some of the decisions I've made and the rational for them.</p>
+    <p>Neat is opinionated and here are some of the decisions I've made and the rational for each of them.</p>
+
+    <h3>Small</h3>
+
+    <p>Neat was designed to be tiny. The modern web is out of crontrol and Neat is a small stand against that trend. A side-effect of being small is that it's also fast.</p>
+
+    <h3>Low Energy</h3>
+
+    <p>Because it's small and fast it also consumes less resources. It should work well even on the slowest connections. Consuming less energy on both the client and the server side.</p>
+
+    <h3>Long Lasting</h3>
+
+    <p>The web is relatively young and technology changes fast but one of the technologies that has lasted as long as the Internet is HTML. There are lots of other interesting formats such as Text, Markdown, or even PDF, but I think plain HTML has a good chance of working well into the future.</p>
+
+    <h3>Not Minified</h3>
+
+    <p>I'm not a fan of minified code. It requires the complexity of a transpiler and it makes the site less open for inspection, learning, accessability, and archive. The size trade-off is only worth it in rare cases.</p> 
 
     <h3>Max Width</h3>
 
-    <p>The body max-width is 800px by default. I find a thinner column of text to be more readable on very large monitors. This is simple to change by editing the <em>max-width</em> of the <em>body</em> element in <em>neat.css</em>.</p>
+    <p>The body <em>max-width</em> is 800px by default. I find a thinner column of text to be more readable on very large monitors. This is simple to change by editing the <em>max-width</em> of the <em>body</em> element in your own <em>custom.css</em> file.</p>
 
     <h3>Left Aligned</h3>
 
@@ -117,38 +103,32 @@
 
     <h3>Images</h3>
 
-    <p>Images are 100% width by default.</p>
+    <p>Images are 100% width by default. This works best with images that are wide and short. You can set manual sizes on individual images as it suits you or change the image width in your <em>custom.css</em> if you typically use a different aspect ratio.</p>
 
     <h3>Left Gutter</h3>
 
-    <p>The left gutter is wider at larger sizes, giving the page a little more breathing room.</p> 
+    <p>The left gutter is wider at larger sizes, giving the page a little more breathing room at desktop sizes.</p> 
 
     <h3>Buttons are Links</h3>
 
-    <p>One of the goals is to use symantic web tags. Buttons are a unique case because most people want a button to link somewhere, but the button tag doesn't currently support the href attribute. Buttons, in Neat are <em>anchor</em> tags with a <em>class</em> of <em>button</em>.</p>
+    <p>I try to use symantic web tags whenever possible. Buttons are a unique case where most people want a button to link somewhere, but the button tag doesn't currently support the href attribute. So, buttons are <em>anchor</em> tags with a <em>class</em> of <em>button</em>. You can also throw a <em>div</em> with a <em>center</em> class around it to make it centered. I don't love this solution and I'm open to suggestions.</p>
 
     <pre>&lt;a class="button" href="#"&gt;Button&lt;/a&gt;</pre>
 
+    <div class="center">
+        <a href="#about" class="button">Download</a>
+    </div>
+
     <h3>No Header</h3>
 
-    <p>Originally, I started to build a header with navigation links in it, but the css code piled up and it didn't feel minimalist to me. Those links are also a distraction on whatever message your page is trying to tell. In my research I found lots of examples of minimalist sites without top navigation and only a link back to the home page. As a result, there is no header and no navigation.</p>
+    <p>Originally, I started to build a header with navigation links in it, but the css code piled up and it didn't feel minimalist to me. Those links are also a distraction on whatever message your page is trying to tell. In my research I found lots of examples of minimalist sites without top navigation and only a link back to the home page. As a result, there is no header and no navigation, other than the link back to the home page.</p>
 
 
     <h2 id="contributing">Contributing</h2>
     
     <p>Neat is distributed as open source under the MIT license.</p>
 
-    <p>There are lots of ways you could contribute to Neat. First, please help spread the word about this project. Something as simple as sharing it on social media goes a long way. If you find a problem, please create an issue on Github. I'm happy to review code change requests. To do that, fork the project and create a pull request. Here's a high level overview of how you do that.</p>
-
-    <ul>
-        <li>Fork the project on Github</li>
-        <li>Clone your fork to your local machine</li>
-        <li>Create a new branch</li>
-        <li>Make and test your changes</li>
-        <li>Add and commit those changes</li>
-        <li>Push your new branch up to Github</li>
-        <li>Use the <em>Compare & pull request</em> button on Github to send a PR</li>
-    </ul>
+    <p>There are lots of ways you could contribute to Neat. First, please help spread the word about this project. Something as simple as sharing it on social media goes a long way. If you find a problem, feel free to create an issue on Github. I'm also happy to review code change requests. To do that, fork the project and create a pull request or just email me a diff.</p>
 
 
     <h2 id="github">Github</h2>
