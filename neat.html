@@ -78,11 +78,11 @@ wget https://neat.joeldare.com/neat.html</code></pre>
 
     <h2 id="decisions">Design Decisions</h2>
 
-    <p>Neat is opinionated and here are some of the decisions I've made and the rational for each of them.</p>
+    <p>Neat is opinionated and here are some of the design decisions and the rational for each of them.</p>
 
     <h3>Small</h3>
 
-    <p>Neat was designed to be tiny. The modern web is out of crontrol and Neat is a small stand against that trend. A side-effect of being small is that it's also fast.</p>
+    <p>In contrast with the majority of the modern web, Neat was designed to be tiny. A side-effect of being small is that it's also very fast.</p>
 
     <h3>Low Energy</h3>
 
@@ -90,19 +90,15 @@ wget https://neat.joeldare.com/neat.html</code></pre>
 
     <h3>Long Lasting</h3>
 
-    <p>The web is relatively young and technology changes fast but one of the technologies that has lasted as long as the Internet is HTML. There are lots of other interesting formats such as Text, Markdown, or even PDF, but I think plain HTML has a good chance of working well into the future.</p>
+    <p>The web is relatively young and technology changes fast but one of the technologies that has lasted as long as the Internet is HTML. There are lots of other interesting formats but plain HTML has a good chance of working well into the future.</p>
 
     <h3>Not Minified</h3>
 
-    <p>I'm not a fan of minified code. It requires the complexity of a transpiler and it makes the site less open for inspection, learning, accessability, and archive. The size trade-off is only worth it in rare cases.</p> 
+    <p>Minified code requires the complexity of a transpiler and makes the site less open for inspection, learning, accessability, and archive. The size trade-off isn't worth it for Neat.</p>
 
     <h3>Max Width</h3>
 
-    <p>The body <em>max-width</em> is 800px by default. I find a thinner column of text to be more readable on very large monitors. This is simple to change by editing the <em>max-width</em> of the <em>body</em> element in your own <em>custom.css</em> file.</p>
-
-    <h3>Left Aligned</h3>
-
-    <p>The body is left aligned. I tried center aligned first, but I just wasn't feeling it. I visited some of my favorite sites on the web and found that most of them where left aligned. So, I went with that.</p>
+    <p>The body <em>max-width</em> is 800px by default. A thinner column of text is more readable on very large monitors. This is simple to change by editing the <em>max-width</em> of the <em>body</em> element in your own <em>custom.css</em> file.</p>
 
     <h3>Images</h3>
 
@@ -110,11 +106,11 @@ wget https://neat.joeldare.com/neat.html</code></pre>
 
     <h3>Left Gutter</h3>
 
-    <p>The left gutter is wider at larger sizes, giving the page a little more breathing room at desktop sizes.</p> 
+    <p>The left gutter is wider at larger sizes, giving the page a little more breathing room at desktop and tablet sizes.</p> 
 
     <h3>Buttons are Links</h3>
 
-    <p>I try to use symantic web tags whenever possible. Buttons are a unique case where most people want a button to link somewhere, but the button tag doesn't currently support the href attribute. So, buttons are <em>anchor</em> tags with a <em>class</em> of <em>button</em>. You can also throw a <em>div</em> with a <em>center</em> class around it to make it centered. I don't love this solution and I'm open to suggestions.</p>
+    <p>It's best to use symantic web tags whenever possible. Buttons are a unique case where you typically might be linking somewhere, but the button tag doesn't currently support the href attribute. So, buttons are <em>anchor</em> tags with a <em>class</em> of <em>button</em>. You can also throw a <em>div</em> with a <em>center</em> class around them if you want a button centered.</p>
 
     <pre>&lt;a class="button" href="#"&gt;Button&lt;/a&gt;</pre>
 
@@ -124,7 +120,7 @@ wget https://neat.joeldare.com/neat.html</code></pre>
 
     <h3>No Header</h3>
 
-    <p>Originally, I started to build a header with navigation links in it, but the css code piled up and it didn't feel minimalist to me. Those links are also a distraction on whatever message your page is trying to tell. In my research I found lots of examples of minimalist sites without top navigation and only a link back to the home page. As a result, there is no header and no navigation, other than the link back to the home page.</p>
+    <p>Because of the complexity of the css and the distraction of navigation, there is no header and no navigation, other than the link back to the home page.</p>
 
     <h3>Responsive</h3>
 
@@ -135,6 +131,8 @@ wget https://neat.joeldare.com/neat.html</code></pre>
     <p>Neat is distributed as open source under the MIT license.</p>
 
     <p>There are lots of ways you could contribute to Neat. First, please help spread the word about this project. Something as simple as sharing it on social media goes a long way. If you find a problem, feel free to create an issue on Github. I'm also happy to review code change requests. To do that, fork the project and create a pull request or just email me a diff.</p>
+
+    <p>Anything related to Neat is fair game for discussion. Anyone who's interested is welcome to join. If you find a problem, or have a suggestion, feel free to create an issue on Github. I'm also happy to review code change requests. To do that, fork the project and create a pull request or just email me a diff. Feedback and discussions will lead to better ideas for future improvements.</p>
 
 
     <h2 id="github">Github</h2>
