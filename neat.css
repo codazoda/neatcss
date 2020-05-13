@@ -25,6 +25,10 @@ img {
     width: 100%;
 }
 
+pre {
+    overflow: scroll;
+}
+
 a.button {
     background-color: #404040;
     color: white;
@@ -49,6 +53,7 @@ a.home {
     text-decoration: none;
     font-weight: bold;
 }
+
 
 /* Desktop sizes */
 @media only screen and (min-width: 600px) {
