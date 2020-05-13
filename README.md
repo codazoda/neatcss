@@ -1,3 +1,3 @@
-# Neat.html
+# Neat CSS
 
-A minimalist, long lasting, opinionated, HTML template. See [neat.joeldare.com](https://neat.joeldare.com).
+Rapidly build efficient sites with *Neat*, the minimalist css framework. See [neat.joeldare.com](https://neat.joeldare.com).
