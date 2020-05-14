@@ -30,15 +30,22 @@ pre {
 }
 
 a.button {
+    display: inline-block;
     background-color: #404040;
     color: white;
     text-align: center;
     padding: 8px;
+    margin-right: 5px;
     border-radius: 5px;
     text-decoration: none;
 }
 
+a.button:lastchild {
+    margin-right: 0;
+}
+
 div.center {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
