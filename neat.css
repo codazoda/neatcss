@@ -29,7 +29,7 @@ pre {
     overflow: scroll;
 }
 
-a.button {
+.button {
     display: inline-block;
     background-color: #404040;
     color: white;
@@ -40,7 +40,7 @@ a.button {
     text-decoration: none;
 }
 
-a.button:lastchild {
+.button:lastchild {
     margin-right: 0;
 }
 
@@ -51,7 +51,7 @@ a.button:lastchild {
     text-align: center;
 }
 
-a.home {
+.home {
     display: inline-block;
     background-color: #404040;
     color: white;
