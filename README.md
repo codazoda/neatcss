@@ -4,4 +4,4 @@ Rapidly build efficient sites with *Neat*, the minimalist css framework. See [ne
 
 ![NeatCSS Screenshot](https://neat.joeldare.com/images/neat-screenshot.png)
 
-See [the wiki on Github](https://github.com/codazoda/neatcss/wiki) for information about how to get involved in the development of *Neat*. 
+See [the wiki](https://github.com/codazoda/neatcss/wiki) for information about how to get involved in the development of *Neat*. 
