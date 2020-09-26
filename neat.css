@@ -15,6 +15,7 @@ body {
     margin: 0;
     max-width: 800px;
     padding: 0 20px 20px 20px;
+    line-height: 1.4em;
 }
 
 p {
