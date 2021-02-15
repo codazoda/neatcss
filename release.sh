@@ -4,6 +4,7 @@ echo
 # Update the index file version number
 echo Edit the neat.html file to point to the new version download link
 echo git add .
+echo git commit -m 'Update version file for next version'
 
 # Create a release tag and push it to Github
 echo git checkout master
