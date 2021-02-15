@@ -30,6 +30,19 @@ pre {
     overflow: auto;
 }
 
+button {
+    display: inline-block;
+    background-color: #404040;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+
 .button {
     display: inline-block;
     background-color: #404040;

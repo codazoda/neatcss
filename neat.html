@@ -33,7 +33,7 @@
 
     <h2 id="download">Download</h2>
 
-    <p><a href="https://github.com/codazoda/neatcss/archive/v0.0.3.zip">Neat CSS 0.0.3</a> (4k) &mdash; 6 January 2021</p>
+    <p><a href="https://github.com/codazoda/neatcss/archive/v0.0.4.zip">Neat CSS 0.0.4</a> (4k) &mdash; 15 February 2021</p>
 
 
     <h2 id="about">About</h2>
@@ -42,7 +42,7 @@
     
     <p>Neat is a simple HTML template. It's tiny, opinionated, and made to last. It's created by Joel Dare and heavily inspired by other minimalist sites like <a href="https://100r.co">Hundred Rabbits</a> and dozens of similar blogs.</p>
 
-    <p>Neat is currently 7k (yes kilobytes) including this documentation. It adds only about 1k of overhead to whatever you create and that's not minified or compressed.</p>
+    <p>Neat is about 1KiB and that is not minified or compressed. This documentation adds another 6KiB. That compresses to about 4KiB in a downloadable zip file.</p>
 
     <p>"That's pretty neat!"</p>
 
@@ -113,15 +113,23 @@ curl -O https://neat.joeldare.com/neat.html</code></pre>
 
     <p>The left gutter is wider at larger sizes, giving the page a little more breathing room at desktop and tablet sizes.</p> 
 
-    <h3>Buttons are Links</h3>
+    <h3>Button are Often Links</h3>
 
-    <p>It's best to use semantic web tags whenever possible. Buttons are a unique case where you're typically linking somewhere, but the button tag doesn't currently support the href attribute. So, buttons are <em>anchor</em> tags with a <em>class</em> of <em>button</em>. You can also throw a <em>div</em>, with a <em>center</em> class, around them if you want a button centered.</p>
+    <p>It's best to use semantic web tags whenever possible. Buttons are a unique case where you're often linking somewhere, but the button tag doesn't currently support the href attribute. So, buttons can be <em>anchor</em> tags with a <em>class</em> of <em>button</em>. You can also throw a <em>div</em>, with a <em>center</em> class, around them if you want a button centered.</p>
 
     <pre>&lt;a class="button" href="#"&gt;Button&lt;/a&gt;</pre>
 
     <div class="center">
         <a href="#" class="button">Button</a>
     </div>
+
+    <h3>Buttons</h3>
+
+    <p>The <em>button</em> tag is also styled in the same way. When buttons aren't links, for example when you're using JavaScript to trigger actions from button clicks, the button tag still works.</p>
+
+    <pre>&lt;button&gt;Button&lt;/button&gt;</pre>
+
+    <button class="center">Button</button>
 
     <h3>No Header</h3>
 
