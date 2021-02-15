@@ -8,7 +8,7 @@ echo git commit -m 'Update version file for next version'
 
 # Create a release tag and push it to Github
 echo git checkout master
-echo git tag -a v0.0.x -m "Version 0.0.x release of Neat."
+echo git tag -a v0.0.x -m "Version 0.0.x release"
 echo git push --tags
 
 # Update the gh-pages (demo) branch and push it back to Github, making it live
