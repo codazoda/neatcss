@@ -86,3 +86,23 @@ button {
         margin-right: 60px;
     }
 }
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    * {
+        color: white;
+    }
+
+    html {
+        border-color: white;
+    }
+
+    body {
+        background-color: #404040;
+    }
+
+    button, .button, .home {
+        background-color: white;
+        color: #404040;
+    }
+}
