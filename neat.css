@@ -30,7 +30,7 @@ pre {
     overflow: auto;
 }
 
-button {
+button, .button {
     display: inline-block;
     background-color: #404040;
     color: white;
@@ -41,18 +41,9 @@ button {
     border-radius: 5px;
     text-decoration: none;
     border: none;
+    line-height: normal;
 }
 
-.button {
-    display: inline-block;
-    background-color: #404040;
-    color: white;
-    text-align: center;
-    padding: 8px;
-    margin-right: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-}
 
 .button:lastchild {
     margin-right: 0;
