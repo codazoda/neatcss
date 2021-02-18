@@ -54,7 +54,7 @@ button {
     text-decoration: none;
 }
 
-.button:lastchild {
+button:last-child, .button:last-child {
     margin-right: 0;
 }
 
