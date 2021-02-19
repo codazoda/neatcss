@@ -103,7 +103,7 @@ button:last-child, .button:last-child {
         background-color: #404040;
     }
 
-    button, .button, .home {
+    button, .button, .home, input {
         background-color: white;
         color: #404040;
     }
