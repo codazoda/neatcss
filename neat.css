@@ -1,16 +1,18 @@
 :root {
     color-scheme: dark light;
+    --light: #fff;
+    --dark: #404040;
 }
 
 * {
     box-sizing: border-box;
-    color: #404040;
+    color: var(--dark);
 }
 
 html {
     border-style: solid;
     border-width: 5px 0 0 0;
-    border-color: #404040;
+    border-color: var(--dark);
 }
 
 html, button, input {
@@ -18,7 +20,7 @@ html, button, input {
 }
 
 body {
-    background-color: white;
+    background-color: var(--light);
     margin: 0;
     max-width: 800px;
     padding: 0 20px 20px 20px;
@@ -39,8 +41,8 @@ pre {
 
 button, .button {
     display: inline-block;
-    background-color: #404040;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
     font-size: 1em;
     text-align: center;
     padding: 8px;
@@ -69,8 +71,8 @@ button:last-child, .button:last-child {
 
 .home {
     display: inline-block;
-    background-color: #404040;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
     margin-top: 20px;
     padding: 5px 10px 5px 10px;
     text-decoration: none;
@@ -92,19 +94,19 @@ button:last-child, .button:last-child {
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
     * {
-        color: white;
+        color: var(--light);
     }
 
     html {
-        border-color: white;
+        border-color: var(--light);
     }
 
     body {
-        background-color: #404040;
+        background-color: var(--dark);
     }
 
     button, .button, .home, input {
-        background-color: white;
-        color: #404040;
+        background-color: var(--light);
+        color: var(--dark);
     }
 }
