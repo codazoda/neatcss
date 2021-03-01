@@ -51,6 +51,7 @@ button, .button {
     text-decoration: none;
     border: none;
     line-height: normal;
+    cursor: pointer;
 }
 
 
