@@ -18,4 +18,4 @@ echo cp neat.html index.html
 echo git commit -m "Updating the gh-pages (demo) branch for v0.0.x release"
 echo git push
 
-echo Draft a release with the new tag on Github
+echo Convert the new tag to a release on Github
