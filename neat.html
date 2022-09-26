@@ -33,7 +33,7 @@
 
     <h2 id="download">Download</h2>
 
-    <p><a href="https://github.com/codazoda/neatcss/archive/v0.0.5.zip">Neat CSS 0.0.5</a> (5k) &mdash; 1 March 2021</p>
+    <p><a href="https://github.com/codazoda/neatcss/archive/v0.1.0.zip">Neat CSS 0.1.0</a> &mdash; 26 September 2022</p>
 
 
     <h2 id="about">About</h2>
@@ -42,7 +42,7 @@
     
     <p>Neat is a simple HTML template. It's tiny, opinionated, and made to last. It's created by Joel Dare and heavily inspired by other minimalist sites like <a href="https://100r.co">Hundred Rabbits</a> and dozens of similar blogs.</p>
 
-    <p>Neat is about 1KiB and that is not minified or compressed. This documentation adds another 7KiB. That compresses to about 5KiB in a downloadable zip file.</p>
+    <p>Neat is about 2Kb and that is not minified or compressed. This documentation adds a few more bytes.</p>
 
     <p>"That's pretty neat!"</p>
 
@@ -103,35 +103,43 @@ curl -O https://neat.joeldare.com/neat.html</code></pre>
 
     <p>The body <em>max-width</em> is 800px by default. <a href="https://cdn.tc-library.org/Edlab/eye-tracking%20article.pdf">Research</a> has shown that limiting the width can lead to better retention of the content itself, as well as a decrease in eye strain. A thinner column of text is more readable on very large monitors. This is simple to change by editing the <em>max-width</em> of the <em>body</em> element in your <em>custom.css</em> file.</p>
 
+    <h3>Centered Body</h3>
+
+    <p>The body is centered as of <em>Neat 0.1.0</em>. I use <em>Neat</em> as a starting point for most of my own projects and I found myself centering the body the majority of the time. As a result, the default is now centered. You can still left-align by adding <code>margin-left</code> and <code>margin-right</code> to your <em>custom.css</em> file.</p> 
+
     <h3>Images</h3>
 
     <p>Images are 100% width by default. This works best with images that are wide and short. You can set manual sizes on individual images as it suits you or change the image width in your <em>custom.css</em> if you typically use a different aspect ratio.</p>
 
     <p>Images have no border by default. This works well for dark colored images but light colored images can get lost. Add something like <code>border: 3px solid #404040</code> if your image needs a border.</p>
 
+    <h3>Left Aligned</h3>
+
+    <p>The page is left aligned by default but this is easy to change. If you prefer the page to be centered, set <code>margin-left: auto</code> and <code>margin-right: auto</code> on the <code>body</code> tag in your <em>custom.css</em> file.</p>
+
     <h3>Left Gutter</h3>
 
     <p>The left gutter is wider at larger sizes, giving the page a little more breathing room at desktop and tablet sizes.</p> 
 
-    <h3>Button are Often Links</h3>
-
-    <p>It's best to use semantic web tags whenever possible. Buttons are a unique case where you're often linking somewhere, but the button tag doesn't currently support the href attribute. So, buttons can be <em>anchor</em> tags with a <em>class</em> of <em>button</em>. You can also throw a <em>div</em>, with a <em>center</em> class, around them if you want a button centered.</p>
-
-    <pre>&lt;a class="button" href="#"&gt;Button&lt;/a&gt;</pre>
-
-    <div class="center">
-        <a href="#" class="button">Button</a>
-    </div>
-
     <h3>Buttons</h3>
 
-    <p>The <em>button</em> tag is also styled in the same way. When buttons aren't links, for example when you're using JavaScript to trigger actions from button clicks, the button tag still works.</p>
+    <p>There are multiple types of buttons. There are anchor tags (links) that should sometimes look like buttons, <em>button</em> tags, and <em>submit</em> style <em>input</em> tags.</p>
+
+    <p>It's best to use semantic web tags whenever possible. Buttons can be a unique case where you're often linking somewhere, but the button tag doesn't support the href attribute. So, buttons can be <em>anchor</em> tags with a <em>class</em> of <em>button</em>.</p>
+
+    <p>The html <em>button</em> tag is also styled in the same way. When buttons aren't links, for example when you're using JavaScript to trigger actions from button clicks, the button tag still works.</p>
+
+    <p><em>Input</em> tags of type <em>submit</em> are also styled this way.</p>
+
+    <pre>&lt;a href="#" class="button"&gt;</pre>
 
     <pre>&lt;button&gt;Button&lt;/button&gt;</pre>
 
+    <pre>&lt;input type="submit" value="Button"&gt;</pre>
+
     <button class="center">Button</button>
 
-    <h3>Input</h3>
+    <h3>Input Fields</h3>
 
     <p>The <em>input</em> tag is styled to support light and dark themes.</p>
 
@@ -147,11 +155,33 @@ curl -O https://neat.joeldare.com/neat.html</code></pre>
 
     <p>Neat is designed to be responsive.</p>
 
+    <h3>Grid</h3>
+
+    <p>As of v0.1.0 Neat has a simple grid system. Each column is automatically sized. Put in four columns and you'll get four equally sized columns. All columns collapse to a single column on mobile.</p>
+
+    <div class="row">
+        <div class="column">One</div>
+        <div class="column">Two</div>
+        <div class="column">Three</div>
+        <div class="column">Four</div>
+    </div>
+
+  <pre><code>&lt;div class="row">
+    &lt;div class="column">One&lt;/div>
+    &lt;div class="column">Two&lt;/div>
+    &lt;div class="column">Three&lt;/div>
+    &lt;div class="column">Four&lt;/div>
+&lt;/div></code></pre>
+
     <h2 id="contributing">Contributing</h2>
     
     <p>Neat is distributed as open-source under the MIT license.</p>
 
     <p>Anything related to <em>Neat</em> is fair game for discussion. Anyone who's interested is welcome to join in the conversation. If you find a problem or have a suggestion, feel free to <a href="https://github.com/codazoda/neatcss/issues">create an issue</a> on Github. I'm also happy to review code change requests. To do that, fork the project and create a pull request or just <a href="mailto:joel@joeldare.com">email me</a> a diff. Feedback and discussions will lead to better ideas for future improvements.</p>
+
+    <h3>Centering</h3>
+
+    <p>You can throw the <em>center</em> class on almost anything you want to center, including a <em>div</em> tag.
 
 
     <h2 id="github">Github</h2>
