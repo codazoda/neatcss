@@ -15,6 +15,7 @@ echo git push --tags
 echo git checkout gh-pages
 echo git merge master --no-edit
 echo cp neat.html index.html
+echo "<script src=\"https://counter.example.com/counter.js\" async></script>" >> index.html
 echo git commit -m "Updating the gh-pages (demo) branch for v0.0.x release"
 echo git push
 
