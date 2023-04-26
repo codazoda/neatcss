@@ -11,6 +11,10 @@
 #
 # I did remove instructions for downloading the release zip files, however.
 # Maybe that's enough to prevent people from grabbing the counter.
+#
+# Maybe I should create an action that runs on this? The downside to this
+# approach is that it creates vendor lock-in, something that I've been able
+# to prevent across my repos right now.
 
 echo THIS IS A DO NOTHING SCRIPT... FOR NOW
 echo
