@@ -19,6 +19,10 @@
 # My deploy process could be to cat neat.html plus the tracker to the index.html
 # file and send that up to the gh_pages branch. I could do that easy enough
 # in a simple bash script, I think.
+#
+# Another simple option would be to serve the home page from the /docs
+# directory. I could then copy the neat.html file there OR make neat.html
+# even more minimal.
 
 echo THIS IS A DO NOTHING SCRIPT... FOR NOW
 echo
