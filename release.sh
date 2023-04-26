@@ -15,6 +15,10 @@
 # Maybe I should create an action that runs on this? The downside to this
 # approach is that it creates vendor lock-in, something that I've been able
 # to prevent across my repos right now.
+#
+# My deploy process could be to cat neat.html plus the tracker to the index.html
+# file and send that up to the gh_pages branch. I could do that easy enough
+# in a simple bash script, I think.
 
 echo THIS IS A DO NOTHING SCRIPT... FOR NOW
 echo
