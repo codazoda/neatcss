@@ -1,3 +1,17 @@
+# This is too complex. I need to simplify.
+#
+# One way I could do that is to move the index.html file into the main branch
+# and not have two. The down side to that is that if someone downloads the
+# whole project, they get that index.html file with my tracker. I don't want
+# that.
+#
+# The way it's setup right now, that index.html file is only in the much
+# more obscure gh_pages branch, so people don't even see it. That's why it's
+# there.
+#
+# I did remove instructions for downloading the release zip files, however.
+# Maybe that's enough to prevent people from grabbing the counter.
+
 echo THIS IS A DO NOTHING SCRIPT... FOR NOW
 echo
 
@@ -13,7 +27,7 @@ echo git push --tags
 
 # Update the gh-pages (demo) branch and push it back to GitHub, making it live
 echo git checkout gh-pages
-echo git merge master --no-edit
+echo git merge master --no-edit (careful)
 echo cp neat.html index.html
 echo "<script src=\"https://counter.joeldare.com/counter.js\" async></script>" >> index.html
 echo git commit -m "Updating the gh-pages (demo) branch for v0.0.x release"
