@@ -14,7 +14,7 @@ echo
 echo To change the major or minor version number:
 echo "    echo x.x.0 >> version.txt"
 echo
-echo Releasing $FEAT branch as $NEXT
+echo Releasing $FEAT branch as v$NEXT
 echo
 read -p "Press Enter to continue or Ctrl-C to stop"
 
