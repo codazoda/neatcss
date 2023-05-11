@@ -57,6 +57,10 @@ if [ "$FEAT" != "master" ]; then
         echo ERROR: Failed to tag the new version.
         exit 1
     fi
+    if ! git push; then
+        echo ERROR: Failed to push all commited changes.
+        exit 1
+    fi
     if ! git push --tags; then
         echo ERROR: Failed to push the new tag.
         exit 1
