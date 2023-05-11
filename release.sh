@@ -35,7 +35,7 @@ if [ "$FEAT" != "master" ]; then
     cp custom.css ./docs/
 
     # Commit the changes above
-    if ! git git add .; then
+    if ! git add .; then
         echo ERROR: Unable to add version and css files.
         exit 1
     fi
