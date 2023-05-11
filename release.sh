@@ -1,48 +1,44 @@
-# This is too complex. I need to simplify.
-#
-# One way I could do that is to move the index.html file into the main branch
-# and not have two. The down side to that is that if someone downloads the
-# whole project, they get that index.html file with my tracker. I don't want
-# that.
-#
-# The way it's setup right now, that index.html file is only in the much
-# more obscure gh_pages branch, so people don't even see it. That's why it's
-# there.
-#
-# I did remove instructions for downloading the release zip files, however.
-# Maybe that's enough to prevent people from grabbing the counter.
-#
-# Maybe I should create an action that runs on this? The downside to this
-# approach is that it creates vendor lock-in, something that I've been able
-# to prevent across my repos right now.
-#
-# My deploy process could be to cat neat.html plus the tracker to the index.html
-# file and send that up to the gh_pages branch. I could do that easy enough
-# in a simple bash script, I think.
-#
-# Another simple option would be to serve the home page from the /docs
-# directory. I could then copy the neat.html file there OR make neat.html
-# even more minimal.
-
-echo THIS IS A DO NOTHING SCRIPT... FOR NOW
+# Describe this script
+echo This script releases a feature branch by merging the current branch into
+echo master, tagging a new version, and pushing master up to origin.
 echo
 
-# Update the index file version number
-echo Edit the neat.html file to point to the new version download link
-echo git add .
-echo git commit -m 'Update version file for next version'
+# Grab the current version number
+CURRENT=`tail -1 version.txt`
+NEXT=`tail -1 version.txt | awk -F. -v OFS=. 'NF==1{print ++$NF}; NF>1{$NF=sprintf("%0*d", length($NF), ($NF+1)); print}'`
+FEAT=`git rev-parse --abbrev-ref HEAD`
 
-# Create a release tag and push it to GitHub
-echo git checkout master
-echo git tag -a v0.0.x -m "Version 0.0.x release"
-echo git push --tags
+# Show additional detail and wait for confirmation
+echo Current version: $CURRENT
+echo 
+echo To change the major or minor version number:
+echo "    echo x.x.0 >> version.txt"
+echo
+echo Releasing $FEAT branch as $NEXT
+echo
+read -p "Press Enter to continue or Ctrl-C to stop"
 
-# Update the gh-pages (demo) branch and push it back to GitHub, making it live
-echo git checkout gh-pages
-echo git merge master --no-edit (careful)
-echo cp neat.html index.html
-echo "<script src=\"https://counter.joeldare.com/counter.js\" async></script>" >> index.html
-echo git commit -m "Updating the gh-pages (demo) branch for v0.0.x release"
-echo git push
+# Verify we aren't on master
+if [ "$FEAT" != "master" ]; then
 
-echo Convert the new tag to a release on GitHub
+    # Append an incremented version number to the version.txt file
+    echo $NEXT >> version.txt
+
+    # Copy the css files to the docs file (for GH Pages)
+    cp neat.css ./docs/
+    cp custom.css ./docs/
+
+    # Create a release tag and push it to GitHub
+    git checkout master
+    git merge $FEAT
+    git tag -a $NEXT -m "Version $NEXT release"
+    git push --tags
+
+    # Exit with a successful code
+    exit 0
+
+fi
+
+# Exit with an error code
+echo "You should be on a feature branch."
+exit 1
