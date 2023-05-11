@@ -53,7 +53,7 @@ if [ "$FEAT" != "master" ]; then
         echo ERROR: Failed to merge the feature branch.
         exit 1
     fi
-    if ! git tag -a $NEXT -m "Version $NEXT release"; then
+    if ! git tag -a v$NEXT -m "Version v$NEXT release"; then
         echo ERROR: Failed to tag the new version.
         exit 1
     fi
