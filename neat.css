@@ -3,6 +3,7 @@
     --light: #fff;
     --lesslight: #efefef;
     --dark: #404040;
+    --moredark: #000;
     border-top: 5px solid var(--dark);
     line-height: 1.5em;
     font-family: sans-serif;
@@ -15,8 +16,15 @@
 }
 
 button, input {
-    font-size: 16px;
+    font-size: 1em; /* Override browser default font shrinking*/
     margin: 1em;
+}
+
+input {
+    border: 1px solid var(--dark);
+    background-color: var(--lesslight);
+    border-radius: .25em;
+    padding: .5em;
 }
 
 pre {
@@ -28,13 +36,6 @@ pre {
 
 code {
     background-color: var(--lesslight);
-}
-
-input {
-    border: 1px solid var(--dark);
-    background-color: var(--lesslight);
-    border-radius: .25em;
-    padding: .5em;
 }
 
 body {
@@ -62,6 +63,11 @@ button, .button, input[type=submit] {
     text-decoration: none;
     border: none;
     cursor: pointer;
+}
+
+button:hover, .button:hover, input[type=submit]:hover {
+    color: var(--lesslight);
+    background-color: var(--moredark);
 }
 
 .center {
@@ -99,7 +105,7 @@ button, .button, input[type=submit] {
         width: 100%;
     }
 
-    /* Make everything in a row is a column */
+    /* Make everything in a row a column */
     .row > * {
         display: block;
         flex: 1 1 auto;
@@ -112,11 +118,18 @@ button, .button, input[type=submit] {
     }
 }
 
-/* Dark mode overrides */
+/* Dark mode overrides (confusingly inverse) */
 @media (prefers-color-scheme: dark) {
     :root {
+        --light: #222;
+        --lesslight: #333;
         --dark: #eee;
-        --light: #000;
+        --moredark: #fefefe;
+    }
+    /* This fixes an odd blue then white shadow on FF in dark mode */
+    *:focus {
+        outline: var(--light);
+        box-shadow: 0 0 0 .25em royalblue;
     }
 }
 
