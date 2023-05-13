@@ -98,7 +98,6 @@ button:last-child, .button:last-child {
     
     .row {
         display: flex;
-        flex-direction: row;
         padding: 0;
         width: 100%;
     }
