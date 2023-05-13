@@ -119,3 +119,10 @@ button, .button, input[type=submit] {
         --light: #000;
     }
 }
+
+/* Printing */
+@media print {
+    .home {
+        display: none;
+    }
+}
