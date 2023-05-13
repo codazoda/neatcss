@@ -20,7 +20,7 @@
 
     <p>Rapidly build efficient sites with <em>Neat</em>, the minimalist css stylesheet. Neat is about 2Kb and that's before it's minified and compressed.</p>
 
-    <ol>
+    <ol class="twocol">
         <li><a href="#about">About</a></li>
         <li><a href="#start">Getting Started</a></li>
         <li><a href="#uses">Uses</a></li>
@@ -132,7 +132,7 @@ curl -O https://neat.joeldare.com/neat.html</code></pre>
 
     <pre>&lt;input&gt;</pre>
 
-    <input class="center" value="My input here">
+    <div class="center"><input placeholder="Some Input"></div>
 
     <h3>No Header</h3>
 
@@ -144,20 +144,22 @@ curl -O https://neat.joeldare.com/neat.html</code></pre>
 
     <h3>Grid</h3>
 
-    <p>As of v0.1.0 Neat has a simple grid system. Each column is automatically sized. Put in four columns and you'll get four equally sized columns. All columns collapse to a single column on mobile.</p>
+    <p>As of v0.1.0 Neat has a simple grid system. Each column is automatically sized. Put in four columns and you'll get four equally sized columns. All columns collapse to a single column on mobile. If you force something too large into one of the columns it will automatically grow to fit the content, shrinking the other columns. You can either avoid doing that or add something like <code>overflow: hidden;</code> to the <code>.flow > *</code> selector in your <em>custom.css</em> file.</p>
+
+    <p>Note: The <em>column</em> class has been removed as of v1.0.0 and all elements become columns by default. This should be backword compatible in most cases and is less code.</p>
 
 <pre><code>&lt;div class="row">
-    &lt;div class="column">One&lt;/div>
-    &lt;div class="column">Two&lt;/div>
-    &lt;div class="column">Three&lt;/div>
-    &lt;div class="column">Four&lt;/div>
+    &lt;div>One&lt;/div>
+    &lt;div>Two&lt;/div>
+    &lt;div>Three&lt;/div>
+    &lt;div>Four&lt;/div>
 &lt;/div></code></pre>
 
-    <div class="row">
-        <div class="column">One</div>
-        <div class="column">Two</div>
-        <div class="column">Three</div>
-        <div class="column">Four</div>
+    <div class="row" style="margin: 1em 0 1em 0;">
+        <div style="background-color: var(--lesslight);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div style="background-color: var(--lesslight);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div style="background-color: var(--lesslight);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div style="background-color: var(--lesslight);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
     </div>
 
     <h3>Centering</h3>

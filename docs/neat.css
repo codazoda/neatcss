@@ -1,7 +1,12 @@
 :root {
-    color-scheme: dark light;
+    color-scheme: light dark;
     --light: #fff;
+    --lesslight: #efefef;
     --dark: #404040;
+    border-top: 5px solid var(--dark);
+    line-height: 1.5em;
+    font-family: sans-serif;
+    font-size: 16px;
 }
 
 * {
@@ -9,20 +14,27 @@
     color: var(--dark);
 }
 
-html {
-    border-style: solid;
-    border-width: 5px 0 0 0;
-    border-color: var(--dark);
+button, input {
+    font-size: 16px;
+    margin: 1em;
 }
 
-html, button, input {
-    font-family: sans-serif;
+pre {
+    background-color: var(--lesslight);
+    margin: 0.5em 0 0.5em 0;
+    padding: 0.5em;
+    overflow: auto;
+}
+
+code {
+    background-color: var(--lesslight);
 }
 
 input {
-    border: 1px solid silver;
-    border-radius: 5px;
-    padding: 5px; 
+    border: 1px solid var(--dark);
+    background-color: var(--lesslight);
+    border-radius: .25em;
+    padding: .5em;
 }
 
 body {
@@ -34,38 +46,22 @@ body {
     margin-right: auto;
 }
 
-p {
-    margin-bottom: 10px;
-    line-height: 1.4em;
-}
-
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-}
-
-pre {
-    overflow: auto;
 }
 
 button, .button, input[type=submit] {
     display: inline-block;
     background-color: var(--dark);
     color: var(--light);
-    font-size: 1em;
     text-align: center;
-    padding: 8px;
-    margin-right: 5px;
-    border-radius: 5px;
+    padding: .5em;
+    margin: 1em;
+    border-radius: .25em;
     text-decoration: none;
     border: none;
-    line-height: normal;
     cursor: pointer;
-}
-
-
-button:last-child, .button:last-child {
-    margin-right: 0;
 }
 
 .center {
@@ -92,7 +88,7 @@ button:last-child, .button:last-child {
 
 /* Desktop sizes */
 @media only screen and (min-width: 600px) {
-    ol {
+    ol.twocol {
         column-count: 2;
     }
     
@@ -103,34 +99,23 @@ button:last-child, .button:last-child {
         width: 100%;
     }
 
-    .row .column {
+    /* Make everything in a row is a column */
+    .row > * {
         display: block;
         flex: 1 1 auto;
         max-width: 100%;
         width: 100%;
     }
 
-    .row .column:not(:last-child) {
+    .row > *:not(:last-child) {
         margin-right: 10px;
     }
 }
 
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
-    * {
-        color: var(--light);
-    }
-
-    html {
-        border-color: var(--light);
-    }
-
-    body {
-        background-color: var(--dark);
-    }
-
-    button, .button, .home, input {
-        background-color: var(--light);
-        color: var(--dark);
+    :root {
+        --dark: #eee;
+        --light: #000;
     }
 }
