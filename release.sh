@@ -33,6 +33,8 @@ if [ "$FEAT" != "master" ]; then
     # Copy the css files to the docs file (for GH Pages)
     cp neat.css ./docs/
     cp custom.css ./docs/
+    cp neat.html ./docs/index.html
+    echo "<script src=\"https://counter.joeldare.com/counter.js\" async></script>" >> ./docs/index.html
 
     # Commit the changes above
     if ! git add .; then
