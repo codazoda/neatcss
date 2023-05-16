@@ -10,3 +10,8 @@
   - fix: add previous (missed) changelog
   - fix: add a v to the version so changelog output is correct
 
+1.0.10
+  - doc: remove comment about website being behind
+  - fix: update a simple typo on a previous commit message
+  - fix: add changelog whitespace
+
