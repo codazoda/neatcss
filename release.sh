@@ -41,7 +41,7 @@ if [ "$FEAT" != "master" ]; then
         echo ERROR: Unable to add version and css files.
         exit 1
     fi
-    if ! git commit -m "Update version number and docs css"; then
+    if ! git commit -m "docs: update version number and docs css"; then
         echo ERROR: Unable to commit version and css files.
         exit 1
     fi
@@ -55,7 +55,7 @@ if [ "$FEAT" != "master" ]; then
         echo ERROR: Failed to merge the feature branch.
         exit 1
     fi
-    if ! git tag -a v$NEXT -m "Version v$NEXT release"; then
+    if ! git tag -a v$NEXT -m "release: v$NEXT"; then
         echo ERROR: Failed to tag the new version.
         exit 1
     fi
