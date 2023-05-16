@@ -32,7 +32,7 @@ if [ "$FEAT" != "master" ]; then
 
     # Append commit messages to the CHANGELOG file
     echo $NEXT >> CHANGELOG.txt
-    git log $CURRENT..HEAD --pretty="  - %s" --no-merges >> CHANGELOG.txt
+    git log v$CURRENT..HEAD --pretty="  - %s" --no-merges >> CHANGELOG.txt
     echo >> CHANGELOG.txt
 
     # Copy the css files to the docs file (for GH Pages)
