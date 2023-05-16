@@ -1,0 +1,63 @@
+:root {
+    --forest: seagreen;
+    background: rgb(225, 225, 225);
+}
+
+/* Increase the body width */
+body {
+    max-width: 1024px;
+    margin-top: 1em;
+    background-color: transparent;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: white;
+    overflow: hidden;
+    padding: 1em;
+    box-shadow: 15px 15px 25px rgba(50, 50, 50, .25);
+}
+
+.price {
+    color: gray;
+}
+
+.left {
+    background-color: var(--forest);
+    text-align: center;
+}
+
+.left * {
+    color: white;
+}
+
+.left > h1 {
+    padding-top: 4em;
+    line-height: 1.2em;
+}
+
+.name {
+    display: inline-block;
+    margin: 4em auto 4em auto;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding: 1em;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.enroll {
+    width: 100%;
+    background-color: var(--forest);
+}
+
+/* Desktop sizes */
+@media only screen and (min-height: 41em) and (min-width: 1024px) {
+
+    body {
+        margin-top: 5em;
+    }
+
+}

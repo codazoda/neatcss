@@ -1,0 +1,20 @@
+/* Add a little extra space at the top */
+.hero {
+    margin-top: 50px;
+}
+
+/* A fixed sized button */
+.fixed {
+    width: 10rem;
+    white-space: nowrap;
+}
+
+/* A blue main button */
+.main {
+    background-color: #0066CC;
+}
+
+/* A lighter button */
+.light {
+    background-color: #999;
+}
