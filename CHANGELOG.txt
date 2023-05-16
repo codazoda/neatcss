@@ -1,2 +1,7 @@
 1.0.8
-
+  - fix: add a v to the version so changelog output is correct
+  - docs: update version number and docs css
+  - doc: add a changelog to track version updates
+  - doc: add a contributing document with some personal notes
+  - feat: append commit messages to changelog
+  - update: commit messages in release script
