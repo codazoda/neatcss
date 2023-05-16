@@ -5,6 +5,7 @@
   - doc: add a contributing document with some personal notes
   - feat: append commit messages to changelog
   - update: commit messages in release script
+  
 1.0.9
   - fix: add previous (missed) changelog
   - fix: add a v to the version so changelog output is correct
