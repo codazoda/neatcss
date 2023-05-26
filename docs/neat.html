@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Neat CSS</title>
+
+    <link rel="stylesheet" type="text/css" href="neat.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+    <a class="home" href="neat.html">&nwarr;</a>
+
+    <h1>Neat CSS</h1>
+
+    <p>Rapidly build efficient sites with <em>Neat</em>, the minimalist css framework. Neat is about 3Kb and that's before it's minified and compressed.</p>
+
+    <ol class="twocol">
+        <li><a href="#about">About</a></li>
+        <li><a href="#start">Getting Started</a></li>
+        <li><a href="#uses">Uses</a></li>
+        <li><a href="#customizing">Customizing</a></li>
+        <li><a href="#decisions">Design Decisions</a></li>
+        <li><a href="#contributing">Contributing</a></li>
+        <li><a href="#github">GitHub</a></li>
+    </ol>
+
+    <h2 id="about">About</h2>
+
+    <img src="https://neat.joeldare.com/images/neat-screenshot.png" class="bordered">
+    
+    <p>It's tiny, opinionated, and made to last. It's created by Joel Dare and heavily inspired by other minimalist sites like <a href="https://100r.co">Hundred Rabbits</a> and dozens of similar blogs.</p>
+
+    <p>"That's pretty neat!"</p>
+
+    <h2 id="start">Getting Started</h2>
+
+    <p>Grab the <em>neat.css</em> and <em>neat.html</em> files.</p>
+
+    <pre><code>curl -O https://neat.joeldare.com/neat.css
+curl -O https://neat.joeldare.com/neat.html</code></pre>
+
+    <p>Then copy <em>neat.html</em> to <em>index.html</em> and make your changes. Use <em>neat.html</em> as a reference.</p>
+
+    <h2 id="uses">Uses</h2>
+
+    <p><em>Neat</em> was designed for:</p>
+
+    <ul>
+        <li>Blogs</li>
+        <li>Journals</li>
+        <li>Technical sites</li>
+        <li>Documentation</li>
+        <li>Books</li>
+        <li>Simple shops</li>
+    </ul>
+
+    <p>You can see a few examples in the <a href="https://github.com/codazoda/neatcss/tree/master/docs/examples">examples directory</a> (docs/examples/).</p>
+
+    <h2 id="customizing">Customizing</h2>
+
+    <p>It's easy to customize <em>Neat</em>. The best way is to create a new <em>custom.css</em> file and then add the following line to the head of your page.</p>
+
+    <pre>&lt;link rel="stylesheet" type="text/css" href="custom.css"&gt;</pre>
+        
+    <p>That will give you the option of updating <em>neat.css</em> without losing any of your personalizations.</p>
+
+
+    <h2 id="decisions">Design Decisions</h2>
+
+    <p><em>Neat</em> is opinionated and here are some of the design decisions and the rationale for each of them.</p>
+
+    <h3>Small</h3>
+
+    <p>In contrast with the majority of the modern web, <em>Neat</em> was designed to be tiny. A side-effect of being small is that it's also very fast.</p>
+
+    <h3>Low Energy</h3>
+
+    <p>Because it's small and fast it also consumes fewer resources. It should work well even on the slowest connections. Consuming less energy on both the client and the server.</p>
+
+    <h3>Long-Lasting</h3>
+
+    <p>The web is relatively young and technology changes fast but one of the technologies that has lasted as long as the Internet is HTML. There are lots of other interesting formats but plain HTML has a good chance of working well into the future.</p>
+
+    <h3>Not Minified</h3>
+
+    <p>Minified code requires the complexity of a transpiler and makes the site less open for inspection, learning, accessibility, and archive. The size trade-off isn't worth it for <em>Neat</em>.</p>
+
+    <h3>Max Width</h3>
+
+    <p>The body <em>max-width</em> is 800px by default. <a href="https://cdn.tc-library.org/Edlab/eye-tracking%20article.pdf">Research</a> has shown that limiting the width can lead to better retention of the content itself, as well as a decrease in eye strain. A thinner column of text is more readable on very large monitors. This is simple to change by editing the <em>max-width</em> of the <em>body</em> element in your <em>custom.css</em> file.</p>
+
+    <h3>Centered Body</h3>
+
+    <p>The body is centered as of <em>Neat 0.1.0</em>. I use <em>Neat</em> as a starting point for most of my own projects and I found myself centering the body the majority of the time. As a result, the default is now centered. You can still left-align by adding <code>margin-left</code> and <code>margin-right</code> to your <em>custom.css</em> file.</p> 
+
+    <h3>Images</h3>
+
+    <p>Images are 100% width by default. This works best with images that are wide and short. You can set manual sizes on individual images as it suits you or change the image width in your <em>custom.css</em> if you typically use a different aspect ratio.</p>
+
+    <p>Images have no border by default. This works well for dark colored images but light colored images can get lost. Add something like <code>border: 3px solid #404040</code> if your image needs a border.</p>
+
+    <h3>Left Gutter</h3>
+
+    <p>If you don't center the page, the left gutter is wider at larger sizes, giving the page a little more breathing room at desktop and tablet sizes. You don't typically notice this because the default is now centered.</p> 
+
+    <h3>Buttons</h3>
+
+    <p>There are multiple types of buttons. There are anchor tags (links) that should sometimes look like buttons, <em>button</em> tags, and <em>submit</em> style <em>input</em> tags.</p>
+
+    <p>It's best to use semantic web tags whenever possible. Buttons can be a unique case where you're often linking somewhere, but the button tag doesn't support the href attribute. So, buttons can be <em>anchor</em> tags with a <em>class</em> of <em>button</em>.</p>
+
+    <p>The html <em>button</em> tag is also styled in the same way. When buttons aren't links, for example when you're using JavaScript to trigger actions from button clicks, the button tag still works.</p>
+
+    <p><em>Input</em> tags of type <em>submit</em> are also styled this way.</p>
+
+    <pre>&lt;a href="#" class="button"&gt;</pre>
+
+    <pre>&lt;button&gt;Button&lt;/button&gt;</pre>
+
+    <pre>&lt;input type="submit" value="Button"&gt;</pre>
+
+    <button class="center">Button</button>
+
+    <h3>Input Fields</h3>
+
+    <p>The <em>input</em> tag is styled to support light and dark themes.</p>
+
+    <pre>&lt;input&gt;</pre>
+
+    <div class="center"><input placeholder="Some Input"></div>
+
+    <h3>No Header</h3>
+
+    <p>Because of the complexity of the css and the distraction of navigation, there is no header and no navigation, other than the link back to the home page.</p>
+
+    <h3>Responsive</h3>
+
+    <p><em>Neat</em> is designed to be responsive.</p>
+
+    <h3>Grid</h3>
+
+    <p>As of v0.1.0 <em>Neat</em> has a simple grid system. Each column is automatically sized. Put in four columns and you'll get four equally sized columns. All columns collapse to a single column on mobile. If you force something too large into one of the columns it will automatically grow to fit the content, shrinking the other columns. You can either avoid doing that or add something like <code>overflow: hidden;</code> to the <code>.flow > *</code> selector in your <em>custom.css</em> file.</p>
+
+    <p>Note: The <em>column</em> class has been removed as of v1.0.0 and all elements become columns by default. This should be backword compatible in most cases and is less code.</p>
+
+<pre><code>&lt;div class="row">
+    &lt;div>One&lt;/div>
+    &lt;div>Two&lt;/div>
+    &lt;div>Three&lt;/div>
+    &lt;div>Four&lt;/div>
+&lt;/div></code></pre>
+
+    <div class="row" style="margin: 1em 0 1em 0;">
+        <div style="background-color: var(--lesslight);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div style="background-color: var(--lesslight);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div style="background-color: var(--lesslight);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div style="background-color: var(--lesslight);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </div>
+
+    <h3>Centering</h3>
+
+    <p>You can throw the <em>center</em> class on almost anything you want to center, including a <em>div</em> tag.
+
+    <h3>Framework</h3>
+
+    <p>Yes, <em>Neat</em> is a <em>framework</em>. The American Heritage Dictionary describes a <em>framework</em> as, "a skeletal support used as the basis for something being constructed". Wikipedia describes a <em>CSS Framework</em> as, "a library allowing for easier, more standards-compliant web design using the Cascading Style Sheets language." That's exactly what <em>Neat</em> is, a framework that I use on dozens of my own websites.</p>
+
+    <h2 id="contributing">Contributing</h2>
+    
+    <p><em>Neat</em> is distributed as open-source under the MIT license.</p>
+
+    <p>Anything related to <em>Neat</em> is fair game for discussion. Anyone who's interested is welcome to join in the conversation. If you find a problem or have a suggestion, feel free to <a href="https://github.com/codazoda/neatcss/issues">create an issue</a> on GitHub. I'm also happy to review code change requests. Feedback and discussions will lead to better ideas for future improvements.</p>
+
+    <h2 id="github">GitHub</h2>
+
+    <p>You'll find <a href="https://github.com/codazoda/neatcss">Neat CSS on GitHub</a>.</p>
+
+</body>
+
+</html>

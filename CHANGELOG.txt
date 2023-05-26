@@ -15,3 +15,6 @@
   - fix: update a simple typo on a previous commit message
   - fix: add changelog whitespace
 
+1.0.11
+  - fix: correct missing neat.html file from public site
+
