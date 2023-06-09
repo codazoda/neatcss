@@ -18,3 +18,6 @@
 1.0.11
   - fix: correct missing neat.html file from public site
 
+1.0.12
+  - doc: remove example link, another user added a section for this
+
