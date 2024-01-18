@@ -21,3 +21,6 @@
 1.0.12
   - doc: remove example link, another user added a section for this
 
+1.0.13
+  - Fix h1 line heights for long titles
+
