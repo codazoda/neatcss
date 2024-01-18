@@ -24,3 +24,6 @@
 1.0.13
   - Fix h1 line heights for long titles
 
+1.0.14
+  - Remove errant testing text
+
