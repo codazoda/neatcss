@@ -27,3 +27,6 @@
 1.0.14
   - Remove errant testing text
 
+1.0.15
+  - Update font to system-ui
+

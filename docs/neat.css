@@ -6,7 +6,7 @@
     --moredark: #000;
     border-top: 5px solid var(--dark);
     line-height: 1.5em;
-    font-family: sans-serif;
+    font-family: system-ui, sans-serif;
     font-size: 16px;
 }
 
