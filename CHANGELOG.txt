@@ -30,3 +30,7 @@
 1.0.15
   - Update font to system-ui
 
+1.0.16
+  - Update active element to use a variable for color and adjust that color slightly
+  - Remove link outline on click and add subtle hover color
+
