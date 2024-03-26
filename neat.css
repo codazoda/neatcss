@@ -4,6 +4,7 @@
     --lesslight: #efefef;
     --dark: #404040;
     --moredark: #000;
+    --link: #5E9ED6;
     border-top: 5px solid var(--dark);
     line-height: 1.5em;
     font-family: system-ui, sans-serif;
@@ -48,6 +49,14 @@ body {
     padding: 0 20px 20px 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+a {
+    outline: none;
+}
+
+a:hover {
+    text-decoration-color: var(--link);
 }
 
 img {
