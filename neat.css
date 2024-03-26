@@ -4,7 +4,7 @@
     --lesslight: #efefef;
     --dark: #404040;
     --moredark: #000;
-    --link: #5E9ED6;
+    --link: royalblue;
     border-top: 5px solid var(--dark);
     line-height: 1.5em;
     font-family: system-ui, sans-serif;
@@ -145,7 +145,7 @@ button + button, .button + .button, input[type=submit] + input[type=submit] {
     /* This fixes an odd blue then white shadow on FF in dark mode */
     *:focus {
         outline: var(--light);
-        box-shadow: 0 0 0 .25em royalblue;
+        box-shadow: 0 0 0 .25em var(--link);
     }
 }
 
