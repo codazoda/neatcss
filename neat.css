@@ -109,7 +109,7 @@ button + button, .button + .button, input[type=submit] + input[type=submit] {
 
 
 /* Desktop sizes */
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
     ol.twocol {
         column-count: 2;
     }
