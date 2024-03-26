@@ -34,3 +34,6 @@
   - Update active element to use a variable for color and adjust that color slightly
   - Remove link outline on click and add subtle hover color
 
+1.0.17
+  - Remove `only screen` from desktop sizes for better printing
+
