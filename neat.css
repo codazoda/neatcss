@@ -53,6 +53,7 @@ body {
 
 a {
     outline: none;
+    color: var(--dark);
 }
 
 a:hover {
