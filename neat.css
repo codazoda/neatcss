@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     color-scheme: light dark;
     --light: #fff;
@@ -9,10 +13,6 @@
     line-height: 1.5em;
     font-family: system-ui, sans-serif;
     font-size: 16px;
-}
-
-* {
-    box-sizing: border-box;
     color: var(--dark);
 }
 
