@@ -33,7 +33,7 @@ if [ "$FEAT" != "master" ]; then
     echo "$NEXT $DATE" >> version.txt
 
     # Append commit messages to the CHANGELOG file with the date
-    echo "$NEXT ($DATE)" >> CHANGELOG.txt
+    echo "$NEXT - $DATE" >> CHANGELOG.txt
     git log v$CURRENT..HEAD --pretty="  - %s" --no-merges >> CHANGELOG.txt
     echo >> CHANGELOG.txt
 
