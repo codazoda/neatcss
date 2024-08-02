@@ -38,6 +38,3 @@
   - Remove `only screen` from desktop sizes for better printing
 
 1.1.1
-
-1.1.2 (2024-08-02)
-
