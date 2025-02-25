@@ -42,6 +42,11 @@ code {
     background-color: var(--lesslight);
 }
 
+blockquote {
+    border-left: 0.25rem solid var(--dark);
+    padding-left: 1rem;
+}
+
 body {
     background-color: var(--light);
     margin: 0;

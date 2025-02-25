@@ -39,3 +39,9 @@
 
 1.1.1
 
+1.1.2
+  - docs: edit contribution instructions
+  - fix: add the missing html opening tag
+  - Update LICENSE.txt
+  - add left border to blockquote
+
