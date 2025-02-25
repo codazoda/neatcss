@@ -1,6 +1,6 @@
 # Contributing
 
-If you want to contribute to _Neat_, please [create a new issue](https://github.com/codazoda/neatcss/issues/new). Alternatively, clone the repo and send a PR.
+If you want to contribute to _Neat_, please [create a new issue](https://github.com/codazoda/neatcss/issues/new). I do not accept direct contributions via PR.
 
 ## My Process
 
