@@ -45,3 +45,6 @@
   - Update LICENSE.txt
   - add left border to blockquote
 
+1.1.3
+  - fix input button style
+
