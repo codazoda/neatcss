@@ -82,6 +82,10 @@ button, .button, input[type=submit] {
     cursor: pointer;
 }
 
+.button a {
+    text-decoration: none;
+}
+
 button:hover, .button:hover, input[type=submit]:hover {
     color: var(--lesslight);
     background-color: var(--moredark);
@@ -97,6 +101,11 @@ button + button, .button + .button, input[type=submit] + input[type=submit] {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+input.center {
+    display: block;
+    margin-top: 1em;
 }
 
 .bordered {
@@ -152,6 +161,9 @@ button + button, .button + .button, input[type=submit] + input[type=submit] {
     *:focus {
         outline: var(--light);
         box-shadow: 0 0 0 .25em var(--link);
+    }
+    .button a {
+        color: var(--light);
     }
 }
 
