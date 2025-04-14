@@ -103,6 +103,10 @@ button + button, .button + .button, input[type=submit] + input[type=submit] {
     text-align: center;
 }
 
+.breathe {
+    margin-top: 3em;
+}
+
 input.center {
     display: block;
     margin-top: 1em;
