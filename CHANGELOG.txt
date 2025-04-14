@@ -48,3 +48,6 @@
 1.1.3
   - fix input button style
 
+1.1.4
+  - Add breathe class to give things breathing room
+
