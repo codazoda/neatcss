@@ -51,3 +51,7 @@
 1.1.4
   - Add breathe class to give things breathing room
 
+1.1.5
+  - Fix the textarea font size
+  - Fix minor typo in readme
+
