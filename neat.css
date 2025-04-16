@@ -20,7 +20,7 @@ h1 {
     line-height: 1em;
 }
 
-button, input {
+button, input, textarea {
     font-size: 1em; /* Override browser default font shrinking*/
 }
 
