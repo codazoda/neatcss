@@ -55,3 +55,12 @@
   - Fix the textarea font size
   - Fix minor typo in readme
 
+1.1.6
+  - Remove note about reaching 50 subs
+  - Remove the home link from the blank template
+  - Add blank.html as a template file
+  - Add the neat starter course teaser
+  - Adjust invite text
+  - Add neat url for sharing" git push
+  - Add newsletter pages
+
