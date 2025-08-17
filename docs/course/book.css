@@ -5,3 +5,7 @@ h2 {
 h3 {
     margin-top: 2em;
 }
+
+@media print {
+    .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+}
