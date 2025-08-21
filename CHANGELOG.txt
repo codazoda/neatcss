@@ -64,3 +64,10 @@
   - Add neat url for sharing" git push
   - Add newsletter pages
 
+1.1.7
+  - Make call to action larger and link to joeldare.com
+  - Fix a page break
+  - Add day labels and page breaks
+  - Add course to docs
+  - Update release to work on master
+
