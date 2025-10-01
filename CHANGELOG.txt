@@ -71,3 +71,5 @@
   - Add course to docs
   - Update release to work on master
 
+1.1.8
+

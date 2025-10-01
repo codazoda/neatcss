@@ -15,7 +15,7 @@
 
 <body>
 
-    <a class="home" href="/">&nwarr;</a>
+    <a class="home" href="/">&nwarrow;</a> <!-- Alternatively use menu class and &equiv; element-->
 
     <h1>Neat CSS</h1>
 
@@ -103,6 +103,12 @@ curl -O https://neat.joeldare.com/neat.html</code></pre>
 
     <p>The body is centered as of <em>Neat 0.1.0</em>. I use <em>Neat</em> as a starting point for most of my own projects and I found myself centering the body the majority of the time. As a result, the default is now centered. You can still left-align by adding <code>margin-left</code> and <code>margin-right</code> to your <em>custom.css</em> file.</p> 
 
+    <h3>Single Navigation Link</h3>
+
+    <p>There is no header and no navigation, other than a single link back to the home page or a menu page. This prevents both the distraction of navigation and the requirement to edit multiple pages to change navigation.</p>
+
+    <p>The default template includes a single "home" button at the top-left. You can also use the <code>menu</code> class with a <code>&amp;equiv;</code> html entity (hamburger menu) and link to something like <code>menu.html</code>. The <code>menu</code> class is right-aligned while the <code>home</code> class is left-aligned.</p>
+
     <h3>Images</h3>
 
     <p>Images are 100% width by default. This works best with images that are wide and short. You can set manual sizes on individual images as it suits you or change the image width in your <em>custom.css</em> if you typically use a different aspect ratio.</p>
@@ -140,10 +146,6 @@ curl -O https://neat.joeldare.com/neat.html</code></pre>
     <pre>&lt;input&gt;</pre>
 
     <div class="center"><input placeholder="Some Input"></div>
-
-    <h3>No Header</h3>
-
-    <p>Because of the complexity of the css and the distraction of navigation, there is no header and no navigation, other than the link back to the home page.</p>
 
     <h3>Responsive</h3>
 

@@ -116,7 +116,7 @@ input.center {
     border: 3px solid;
 }
 
-.home {
+.home, .menu {
     display: inline-block;
     background-color: var(--dark);
     color: var(--light);
@@ -124,6 +124,14 @@ input.center {
     padding: 5px 10px 5px 10px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: .25em;
+    
+}
+
+.menu {
+    display: block;
+    width: fit-content;
+    margin-inline-start: auto;
 }
 
 
