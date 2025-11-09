@@ -48,18 +48,16 @@
     
     <p>From your home directory we're going to create a directory called purehtml and switch into it. Run these two commands.</p>
     
-    <pre><code>
-    mkdir purehtml
-    cd purehtml
-    </code></pre>
+    <pre><code>mkdir purehtml
+cd purehtml</code></pre>
     
     <h3>Download a simple html template</h3>
     
     <p>We're going to download a boiler plate html file, as index.html. Run this command.</p>
     
-    <pre><code>
-    curl -o index.html https://neat.joeldare.com/blank.html
-    </code></pre>
+    <pre><code>curl -o /
+  index.html /
+  https://neat.joeldare.com/blank.html</code></pre>
     
     <p>Now open the index.html file in your web browser to take a look.</p>
     
@@ -67,9 +65,8 @@
     
     <p>We'll add a tiny bit of style by downloading neat.css. Neat is a minimalist css file that's just 3Kb.</p>
     
-    <pre><code>
-    curl -O https://neat.joeldare.com/neat.css
-    </code></pre>
+    <pre><code>curl -O /
+  https://neat.joeldare.com/neat.css</code></pre>
     
     <p>Open the file in your browser again to see the new style. Notice the page works in both light and dark modes.</p>
     
@@ -93,15 +90,14 @@
 
     <p>Just below the body text, add an image. Here's the code:</p>
 
-    <pre><code>&lt;img class="bordered" src="sailboat.jpg"&gt;
-    </code></pre>
+    <pre><code>&lt;img class="bordered" src="sailboat.jpg"&gt;</code></pre>
 
     <p>We used a Neat CSS style. The class adds a solid border around the image.</p>
 
     <p>Use the following command to download a sample image.</p>
 
-    <pre><code>curl -O https://joeldare.com/media/sailboat.jpg
-    </code></pre>
+    <pre><code>curl -O /
+  https://joeldare.com/media/sailboat.jpg</code></pre>
 
     <p>Now view the page in your web browser.</p>
 
@@ -110,9 +106,10 @@
     <p>Just below the text body, add a new div and a link. Here's the code:</p>
 
     <pre><code>&lt;div class="center"&gt;
-    &lt;a class="button breathe" href=""&gt;Buy Now&lt;/a&gt;
-    &lt;/div&gt;
-    </code></pre>
+  &lt;a class="button breathe" href=""&gt;
+    Buy Now
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
 
     <p>This creates a centered "Buy Now" button at the bottom of the page.</p>
 
@@ -127,9 +124,10 @@
     <p>I originally wrote the following code for this sample:</p>
 
     <pre><code>&lt;p class="center"&gt;
-    &lt;a class="button" href=""&gt;Buy Now&lt;/a&gt;
-    &lt;/p&gt;
-    </code></pre>
+  &lt;a class="button" href=""&gt;
+    Buy Now
+  &lt;/a&gt;
+&lt;/p&gt;</code></pre>
 
     <p>The <code>&lt;p&gt;</code> (paragraph) and <code>&lt;a&gt;</code> (anchor/link) tags can also be semantic because they describe the purpose of the content they contain, but the <code>&lt;p&gt;</code> tag doesn't contain a paragraph of text, so it's not really semantic.</p>
 
@@ -151,9 +149,12 @@
 
     <p>You might have noticed that it downloaded pretty quickly—it's only 28K. I used ImageMagick to reduce the original size from 1.8MB to 28K. Here's the command.</p>
 
-    <pre>
-        <code>magick sailboat.png -resize 800x -strip -quality 75 sailboat.jpg</code>
-    </pre>
+    <pre><code>magick /
+  sailboat.png /
+  -resize 800x /
+  -strip /
+  -quality 75 /
+  sailboat.jpg</code></pre>
 
     <p>This takes the original image, <code>sailboat.png</code>, resizes it to 800 pixels wide and saves it as a JPG with a quality of 75%. That reduces the image quality quite a bit but also makes it much, much smaller. Smaller means faster, cheaper, and less carbon. It's especially useful for users on slower internet connections, such as those in rural areas.</p>
 
@@ -164,9 +165,13 @@
 
     <p>Add <code>-interlace Plane</code> to the command to create a progressive image. Here’s the full command with all the options:</p>
 
-    <pre>
-        <code>magick sailboat.png -resize 800x -strip -interlace Plane -quality 75 sailboat.jpg</code>
-    </pre>
+    <pre><code>magick /
+  sailboat.png /
+  -resize 800x /
+  -strip /
+  -interlace Plane /
+  -quality 75 /
+  sailboat.jpg</code></pre>
 
     <p>Now you've got tiny images. Tomorrow we'll talk about adding your unique style.</p>
 
@@ -181,9 +186,11 @@
 
     <p>If you prefer WebP, the following command will work:</p>
 
-    <pre>
-        <code>magick sailboat.png -resize 800x -strip -quality 75 sailboat.webp</code>
-    </pre>
+    <pre><code>magick sailboat.png /
+  -resize 800x /
+  -strip /
+  -quality 75 /
+  sailboat.webp</code></pre>
 
     <p>WebP images will be smaller than their JPEG counterparts. Keep in mind, however, that WebP doesn't support progressive images. On a really slow connection, a larger progressive JPEG might still feel faster than a smaller WebP image.</p>
 
@@ -203,8 +210,9 @@
 
     <p>It's easy to customize pages using Neat. The best way is to create a new <code>custom.css</code> file and then add the following line to the head of your page.</p>
 
-    <pre><code>&lt;link rel="stylesheet" type="text/css" href="custom.css"&gt;
-    </code></pre>
+    <pre><code>&lt;link rel="stylesheet" 
+  type="text/css"
+  href="custom.css"&gt;</code></pre>
 
     <p>That will give you the option to customize any aspect of your page and to update <code>neat.css</code>, if you ever need to, without losing any of your personalizations.</p>
 
@@ -215,16 +223,16 @@
     <p>If you wanted all your headings to be centered you could add the following to your <code>custom.css</code> file.</p>
 
     <pre><code>h1 {
-        text-align: center;
-    }</code></pre>
+  text-align: center;
+}</code></pre>
 
     <h3>Change your link colors</h3>
 
     <p>If you wanted all your links to be a different color you could add something like the following to your <code>custom.css</code> file.</p>
 
-    <pre><code>    a {
-        color: red;
-    }</code></pre>
+    <pre><code>a {
+  color: red;
+}</code></pre>
 
     <p>These are just a few simple examples. You can change anything about the design.</p>
 
@@ -252,12 +260,11 @@
 
     <pre><code># My Heading Here
 
-    Some main text goes here...
+Some main text goes here...
 
-    ## Another Section
+## Another Section
 
-    Even more text goes here...
-    </code></pre>
+Even more text goes here...</code></pre>
 
     <h3>Replace placeholders with your real copy</h3>
 
@@ -288,19 +295,16 @@
     <p>In your working directory, initialize a local repository and make your first commit:</p>
 
     <pre><code>git init
-    git add .
-    git commit -m "first commit"
-    </code></pre>
+git add .
+git commit -m "first commit"</code></pre>
 
     <p>Add GitHub as your <code>origin</code> (replace <code>[url]</code> with the URL GitHub gave you):</p>
 
-    <pre><code>git remote add origin [url]
-    </code></pre>
+    <pre><code>git remote add origin [url]</code></pre>
 
     <p>Push your code to GitHub:</p>
 
-    <pre><code>git push -u origin main
-    </code></pre>
+    <pre><code>git push -u origin main</code></pre>
 
     <h3>Enable GitHub Pages</h3>
 
