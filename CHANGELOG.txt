@@ -76,3 +76,6 @@
 1.1.9
   - add subscription link
 
+1.1.10
+  - Change doctype to lowercase (it was incorrect as uppercase)
+
